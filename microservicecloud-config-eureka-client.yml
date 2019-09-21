@@ -6,29 +6,29 @@ spring:
 server: 
   port: 7001
 spring:
-  profiles: dev 
-  application: 
+  profiles: dev
+  application:
     name: microservicecloud-config-eureka-client
 eureka: 
   instance:
-    hostname: eureka7001.com #eureka·şÎñ¶ËµÄÊµÀıÃû³Æ
-  client: 
-    register-with-eureka: false     #false±íÊ¾²»Ïò×¢²áÖĞĞÄ×¢²á×Ô¼º¡£
-    fetch-registry: false     #false±íÊ¾×Ô¼º¶Ë¾ÍÊÇ×¢²áÖĞĞÄ£¬ÎÒµÄÖ°Ôğ¾ÍÊÇÎ¬»¤·şÎñÊµÀı£¬²¢²»ĞèÒªÈ¥¼ìË÷·şÎñ
-    service-url: 
-      defaultZone: http://eureka7001.com:7001/eureka
+    hostname: eureka7001.com #eurekaæœåŠ¡ç«¯çš„å®ä¾‹åç§°
+  client:
+    register-with-eureka: false    #falseè¡¨ç¤ºä¸å‘æ³¨å†Œä¸­å¿ƒæ³¨å†Œè‡ªå·±ã€‚
+    fetch-registry: false    #falseè¡¨ç¤ºè‡ªå·±ç«¯å°±æ˜¯æ³¨å†Œä¸­å¿ƒï¼Œæˆ‘çš„èŒè´£å°±æ˜¯ç»´æŠ¤æœåŠ¡å®ä¾‹ï¼Œå¹¶ä¸éœ€è¦å»æ£€ç´¢æœåŠ¡
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
 ---
-server: 
+server:
   port: 7001
 spring:
-  profiles: test 
-  application: 
+  profiles: test
+  application:
     name: microservicecloud-config-eureka-client
-eureka: 
+eureka:
   instance:
-    hostname: eureka7001.com #eureka·şÎñ¶ËµÄÊµÀıÃû³Æ
+    hostname: eureka7001.com #eurekaæœåŠ¡ç«¯çš„å®ä¾‹åç§°
   client: 
-    register-with-eureka: false     #false±íÊ¾²»Ïò×¢²áÖĞĞÄ×¢²á×Ô¼º¡£
-    fetch-registry: false     #false±íÊ¾×Ô¼º¶Ë¾ÍÊÇ×¢²áÖĞĞÄ£¬ÎÒµÄÖ°Ôğ¾ÍÊÇÎ¬»¤·şÎñÊµÀı£¬²¢²»ĞèÒªÈ¥¼ìË÷·şÎñ
+    register-with-eureka: false     #falseè¡¨ç¤ºä¸å‘æ³¨å†Œä¸­å¿ƒæ³¨å†Œè‡ªå·±ã€‚
+    fetch-registry: false     #falseè¡¨ç¤ºè‡ªå·±ç«¯å°±æ˜¯æ³¨å†Œä¸­å¿ƒï¼Œæˆ‘çš„èŒè´£å°±æ˜¯ç»´æŠ¤æœåŠ¡å®ä¾‹ï¼Œå¹¶ä¸éœ€è¦å»æ£€ç´¢æœåŠ¡
     service-url: 
-      defaultZone: http://eureka7001.com:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka/
